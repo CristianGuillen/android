@@ -3,6 +3,7 @@ package com.example.login;
 import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         else
            {
            //mostrar mensaje de error
+               Toast.makeText(this, "Usuario o clave inválidos, pruebe: Admin, Admin", Toast.LENGTH_SHORT).show();
 
            }
     }
